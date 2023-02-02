@@ -1,0 +1,139 @@
+  ul {
+    list-style-type: none;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3C3C3C;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #currTab {
+    text-decoration-line: underline;
+  }
+  body {
+    background-color:#3C3C3C;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    font-family: "Bakbak+One";
+  }
+  .row {
+    display: flex;
+    position: relative;
+  }
+  .column {
+    flex: 33.33%;
+    padding: 10px;
+  }
+  video{
+    filter: blur(6px);
+    transform: scale(0.95);
+    display: block;
+  }
+  img{
+    filter: blur(4px);
+    transform: scale(0.95);
+  } 
+  .row .column .centered {
+    position: absolute;
+    width: 33%;
+    top: 50%;
+    flex: 33.33%;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .row .column .youtube {
+    position: absolute;
+    width: 33%;
+    top: 50%;
+    flex: 33.33%;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+
+  }
+  .row .column .insta {
+    position: absolute;
+    width: 33%;
+    top: 50%;
+    flex: 33.33%;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 800px){
+    .row {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      
+    }
+    .column {
+      flex: 33.33%;
+      padding: 10px;
+    }
+    .row .column .centered {
+      position: absolute;
+      width: 100%;
+      color: white;
+      font-size: 5vw;
+      top:17%;
+      flex: 33.33%;
+      text-align: center;
+      font-weight: bold;
+      
+    }
+    .row .column .youtube {
+      position: absolute;
+      width: 100%;
+      top: 53%;
+      flex: 33.33%;
+      color: white;
+      font-size: 5vw;
+      text-align: center;
+      font-weight: bold;
+  
+    }
+    .row .column .insta {
+      position: absolute;
+      width: 100%;
+      top: 85%;
+      flex: 33.33%;
+      color: white;
+      font-size: 5vw;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  h1{
+    color:white;
+    text-align: center;
+    font-size: 5vw;
+  }
+  label{
+    color:white;
+    text-align: left;
+    font-size: 2vw;
+  }
+  form{
+    text-align: center;
+  }
+  #message{
+    width: 30%;
+    height: 4vw;
+  }
