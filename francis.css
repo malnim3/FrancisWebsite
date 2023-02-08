@@ -25,7 +25,7 @@
     padding-right: 100px;
     padding-bottom: 50px;
     padding-left: 100px;
-    font-family: "Bakbak+One";
+    font-family: "Bakbak One", sans-serif;
   }
   .row {
     display: flex;
@@ -39,44 +39,72 @@
     filter: blur(6px);
     transform: scale(0.95);
     display: block;
+    width: 100%; height: 400px; object-fit: cover;
+    border: 1px solid black;
+  }
+  .grid-img{
+    filter:none;
+    transform: scale(0.95);
+    width: 100%; height: 400px; object-fit: cover;
+    border: 1px solid black;
+  }
+  .grid-container {
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 3fr)); */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid {
+    text-align: center;
   }
   img{
     filter: blur(4px);
     transform: scale(0.95);
+    width: 100%; height: 400px; object-fit: cover;
+    border: 1px solid black;
   } 
   .row .column .centered {
     position: absolute;
     width: 33%;
-    top: 50%;
+    top: 33%;
     flex: 33.33%;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
-    font-weight: bold;
-    
+    /* font-weight: bold; */
   }
   .row .column .youtube {
     position: absolute;
     width: 33%;
-    top: 50%;
+    top: 40%;
     flex: 33.33%;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 
   }
   .row .column .insta {
     position: absolute;
     width: 33%;
-    top: 50%;
+    top: 40%;
     flex: 33.33%;
     color: white;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 900px){
+    .grid-img{
+      filter:none;
+      transform: scale(0.95);
+      width: 100%; height: 400px; object-fit: cover;
+      border: 1px solid black;
+    }
+    .grid-container {
+      /* grid-template-columns: repeat(auto-fill, minmax(150px, 3fr)); */
+      display: grid;
+      grid-template-columns: auto;
+    }
     .row {
       display: flex;
       flex-direction: column;
@@ -92,48 +120,157 @@
       width: 100%;
       color: white;
       font-size: 5vw;
-      top:17%;
+      top:14%;
       flex: 33.33%;
       text-align: center;
-      font-weight: bold;
+      /* font-weight: bold; */
       
     }
     .row .column .youtube {
       position: absolute;
       width: 100%;
-      top: 53%;
+      top: 48%;
       flex: 33.33%;
       color: white;
       font-size: 5vw;
       text-align: center;
-      font-weight: bold;
+      /* font-weight: bold; */
   
     }
     .row .column .insta {
       position: absolute;
       width: 100%;
-      top: 85%;
+      top: 82%;
       flex: 33.33%;
       color: white;
       font-size: 5vw;
       text-align: center;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
+  }
+  @media screen and (max-width: 550px){
+    video{
+      filter: blur(6px);
+      transform: scale(0.95);
+      display: block;
+      width: 250%; height: 300px; object-fit: cover;
+      border: 1px solid black;
+      margin-left: -75%;
+
+    }
+    .grid-img{
+      filter: none;
+      transform: scale(0.95);
+      width: 250%; height: 300px; object-fit: cover;
+      border: 1px solid black;
+      margin-left: -75%;
+    } 
+    img{
+      filter: blur(4px);
+      transform: scale(0.95);
+      width: 250%; height: 300px; object-fit: cover;
+      border: 1px solid black;
+      margin-left: -75%;
+    } 
+    .row {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      
+    }
+    .column {
+      flex: 33.33%;
+      padding: 10px;
+      
+    }
+    .row .column .centered {
+      position: absolute;
+      width: 100%;
+      color: white;
+      font-size: 5vw;
+      top:14%;
+      flex: 33.33%;
+      text-align: center;
+      /* font-weight: bold; */
+      
+    }
+    .row .column .youtube {
+      position: absolute;
+      width: 100%;
+      top: 48%;
+      flex: 33.33%;
+      color: white;
+      font-size: 5vw;
+      text-align: center;
+      /* font-weight: bold; */
+  
+    }
+    .row .column .insta {
+      position: absolute;
+      width: 100%;
+      top: 82%;
+      flex: 33.33%;
+      color: white;
+      font-size: 5vw;
+      text-align: center;
+      /* font-weight: bold; */
+    }
+    form {
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+      width: 24rem;
+      gap: 1rem;
+      margin-left: 8%;
+      justify-content: center;  
+    }
+    .contact{
+      display: grid;
+      place-content : center;
+      margin-left: 8%;
+    }
+    input,select,textarea{
+      border: 1px solid black;
+      padding: 1.4rem;
+      width: 70%;
+    }
+    h1 {
+      margin-left: -20%;
+    }
+
   }
   h1{
     color:white;
     text-align: center;
-    font-size: 5vw;
+    font-size: 350%;
   }
   label{
     color:white;
     text-align: left;
     font-size: 2vw;
   }
-  form{
-    text-align: center;
-  }
   #message{
     width: 30%;
     height: 4vw;
+  }
+  .contact{
+    display: grid;
+    place-content : center;
+  }
+  form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 24rem;
+    gap: 1rem;
+    justify-content: center;  
+  }
+  input,select,textarea{
+    border: 1px solid black;
+    padding: 1.4rem;
+    
+  }
+  button{
+    padding: 2px;
+    width: 33.333%;
   }
