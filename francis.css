@@ -165,12 +165,10 @@
       filter: blur(6px);
       transform: scale(0.95);
       display: block;
-      width: 250%; height: 300px; object-fit: cover;
+      width: 200%; height: 300px; object-fit: cover;
       border: 1px solid black;
-      margin-left: -75%;
-
+      margin-left: -50%;
     }
-   
     .grid-img{
       filter: none;
       transform: scale(0.95);
@@ -181,9 +179,9 @@
     img{
       filter: blur(4px);
       transform: scale(0.95);
-      width: 250%; height: 300px; object-fit: cover;
+      width: 200%; height: 300px; object-fit: cover;
       border: 1px solid black;
-      margin-left: -75%;
+      margin-left: -50%;
     } 
     .row {
       display: flex;
