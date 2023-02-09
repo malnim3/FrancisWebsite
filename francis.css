@@ -172,9 +172,9 @@
     .grid-img{
       filter: none;
       transform: scale(0.95);
-      width: 220%; height: 400px; object-fit: cover;
+      width: 200%; height: 500px; object-fit: cover;
       border: 1px solid black;
-      margin-left: -60%;
+      margin-left: -50%;
     } 
     img{
       filter: blur(4px);
@@ -196,7 +196,7 @@
     }
     .row .column .centered {
       position: absolute;
-      width: 100%;
+      width: 90%;
       color: white;
       font-size: 7vw;
       top:14%;
@@ -207,7 +207,7 @@
     }
     .row .column .youtube {
       position: absolute;
-      width: 100%;
+      width: 90%;
       top: 48%;
       flex: 33.33%;
       color: white;
@@ -218,7 +218,7 @@
     }
     .row .column .insta {
       position: absolute;
-      width: 100%;
+      width: 90%;
       top: 82%;
       flex: 33.33%;
       color: white;
@@ -246,7 +246,11 @@
       width: 70%;
     }
     h1 {
-      margin-left: -20%;
+      margin-left: 5%;
+    }
+    ul li{
+      float: none;
+      width: 100%;
     }
 
   }
