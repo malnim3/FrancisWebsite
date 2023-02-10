@@ -4,6 +4,19 @@
     margin: 5px auto;
   }
 
+  button{
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px;
+    width: 33.333%;
+    color: #3C3C3C;
+    border-color: white;
+  }
+  button:hover {
+    border-color: #3C3C3C;
+    background-color: #3C3C3C;
+    color: white;
+  }
   a {
     list-style-type: none;
     font-size: 25px;
@@ -240,7 +253,7 @@
     .nav-link{
       text-align: center;
       line-height: 60px;
-      width: 100%;
+      width: 95%;
       display: table;
     }
     .nav-link:hover{
@@ -286,7 +299,7 @@
     }
     .row .column .centered {
       position: absolute;
-      width: 100%;
+      width: 95%;
       color: white;
       font-size: 7vw;
       top:14%;
@@ -336,7 +349,7 @@
       width: 70%;
     }
     h1 {
-      margin-left: 5%;
+      margin-left: 2%;
     }
 
   }
@@ -370,8 +383,4 @@
     border: 1px solid black;
     padding: 1.4rem;
     
-  }
-  button{
-    padding: 2px;
-    width: 33.333%;
   }
