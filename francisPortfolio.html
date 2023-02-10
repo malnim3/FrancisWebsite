@@ -4,18 +4,27 @@
     <link rel="stylesheet" href="francis.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bakbak+One">
     <title>Francis Cabrera</title>
-    <script type="text/javascript" src="francis.js"></script>
+    <!-- <script type="text/javascript" src="francis.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta charset="UTF-8">
 
 </head>
 
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a id = "currTab" class="active" href="francisPortfolio.html">Barbero</a></li>
-        <li><a href="francisContact.html">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class = "nav-menu">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" id = "currTab" href="francisPortfolio.html">Barbero</a></li>
+                <li><a class="nav-link" href="francisContact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <div class = "grid-container">
         <div class = "grid">
@@ -56,5 +65,6 @@
         </div>
        
     </div>
+    <script src="barbero.js"></script>
 </body>
 </html>
